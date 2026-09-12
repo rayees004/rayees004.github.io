@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize EmailJS. 
     // IMPORTANT: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS Public Key
     (function(){
-        // emailjs.init("YOUR_PUBLIC_KEY"); // UNCOMMENT and ADD YOUR KEY
+        emailjs.init("N2DM8Vjjv_v12i8_w"); // UNCOMMENT and ADD YOUR KEY
     })();
 
     const contactForm = document.getElementById('contact-form');
@@ -153,8 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
                Uncomment the block below to activate email sending.
             */
 
-            /*
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            
+            emailjs.send('service_7xldaj9', 'template_81g990p', templateParams)
                 .then(function(response) {
                     // Success
                     showMessage('Message sent successfully! I will get back to you soon.', 'success-msg');
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.error('EmailJS Error:', error);
                     resetButton();
                 });
-            */
+            
            
            // Mock simulation for demo purposes until API keys are provided:
            setTimeout(() => {
